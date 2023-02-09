@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/Banners', function(req, res) {
 })
 
 app.get('*', function(req, res){
-    res.sendFile(path.join(__dirname + 'index.js'));
+    res.sendFile(path.join(__dirname + '/pages/index.html'));
 })
 
 app.listen(port, function(req, res) {
